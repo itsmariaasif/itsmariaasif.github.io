@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Asif — Video Editor & AI Content Creator</title>
+<meta name="description" content="Maria Asif — professional video editing, AI influencer videos, product ads, reels, motion graphics and cartoon stories. Create • Edit • Inspire.">
+<meta name="theme-color" content="#0d0218">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maria Asif — Video Editor & AI Content Creator">
+<meta property="og:description" content="Professional video editing, AI influencer videos, product ads, reels, motion graphics and cartoon stories. Create • Edit • Inspire.">
+<meta property="og:image" content="assets/dp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maria Asif — Video Editor & AI Content Creator">
+<meta name="twitter:description" content="Professional video editing, AI influencer videos, product ads, reels, motion graphics and cartoon stories. Create • Edit • Inspire.">
+<meta name="twitter:image" content="assets/dp.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0218; --bg2:#170630; --card:#1d0a38; --line:#3b1470;
+    --purple:#9333ea; --purple2:#c084fc; --lav:#d8b4fe; --gold:#ffd65a;
+    --white:#ffffff; --soft:#cfc2e8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--white);font-family:'Poppins',system-ui,sans-serif;overflow-x:hidden}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(13,2,24,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1120px;margin:0 auto}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px}
+  .logo span{color:var(--purple2)}
+  .nav-links{display:flex;gap:22px;font-size:14.5px;font-weight:500;color:var(--soft)}
+  .nav-links a:hover{color:var(--white)}
+  .nav-cta{background:var(--purple);color:#fff;padding:9px 18px;border-radius:999px;font-weight:600;font-size:14px}
+  .nav-cta:hover{background:#a855f7}
+  @media(max-width:720px){.nav-links{display:none}}
+
+  /* hero */
+  .hero{position:relative;text-align:center;padding:84px 20px 64px;background:
+    radial-gradient(700px 420px at 50% -60px, rgba(147,51,234,.38), transparent 65%),
+    linear-gradient(180deg,var(--bg2),var(--bg))}
+  .rec{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;
+    padding:7px 16px;font-size:12.5px;letter-spacing:2px;color:var(--lav);margin-bottom:26px}
+  .rec i{width:9px;height:9px;border-radius:50%;background:#ff3b5c;display:inline-block;animation:blink 1.2s infinite}
+  @keyframes blink{50%{opacity:.15}}
+  .dp-ring{width:216px;height:216px;margin:0 auto 26px;border-radius:50%;padding:6px;
+    background:conic-gradient(from 0deg,var(--purple),var(--gold),var(--purple2),var(--purple));
+    animation:spin 14s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .dp-ring img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:5px solid var(--bg);display:block;animation:spin 14s linear infinite reverse}
+  .hero h1{font-size:clamp(38px,7vw,62px);font-weight:800;line-height:1.08}
+  .hero h1 .grad{background:linear-gradient(90deg,var(--purple2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .role{margin-top:10px;font-size:clamp(15px,2.6vw,19px);letter-spacing:4px;color:var(--lav);font-weight:600}
+  .hero p{max-width:640px;margin:20px auto 0;color:var(--soft);font-size:16.5px;line-height:1.65}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+  .btn{padding:14px 30px;border-radius:999px;font-weight:700;font-size:15.5px;transition:.2s;display:inline-block}
+  .btn-p{background:linear-gradient(90deg,var(--purple),#7c1ded);color:#fff;box-shadow:0 10px 30px rgba(147,51,234,.4)}
+  .btn-p:hover{transform:translateY(-2px)}
+  .btn-o{border:1.5px solid var(--purple2);color:var(--lav)}
+  .btn-o:hover{background:rgba(147,51,234,.15)}
+  .stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:46px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 24px;min-width:128px}
+  .stat b{display:block;font-size:24px;color:var(--gold)}
+  .stat span{font-size:12.5px;color:var(--soft);letter-spacing:.4px}
+
+  /* sections */
+  section{padding:74px 0}
+  .sec-head{text-align:center;margin-bottom:42px}
+  .sec-head .kicker{color:var(--purple2);font-weight:700;letter-spacing:3px;font-size:12.5px;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(28px,4.6vw,40px);font-weight:800;margin-top:8px}
+  .sec-head p{color:var(--soft);margin-top:10px;font-size:15.5px}
+
+  .grid{display:grid;gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.g3,.g2{grid-template-columns:1fr}}
+
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 24px;transition:.2s}
+  .svc:hover{transform:translateY(-5px);border-color:var(--purple)}
+  .svc .ico{font-size:34px;margin-bottom:14px}
+  .svc h3{font-size:18.5px;font-weight:700;margin-bottom:8px}
+  .svc p{color:var(--soft);font-size:14.5px;line-height:1.6}
+
+  .work-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+  .work-card video{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
+  .work-card .wc-in{padding:18px 20px}
+  .work-card h3{font-size:17px;font-weight:700}
+  .work-card p{color:var(--soft);font-size:14px;margin-top:5px;line-height:1.55}
+  .tag{display:inline-block;background:rgba(147,51,234,.2);color:var(--lav);border:1px solid var(--line);
+    font-size:11.5px;font-weight:600;padding:4px 11px;border-radius:999px;margin-bottom:10px;letter-spacing:.6px}
+
+  .step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 22px;text-align:center}
+  .step .num{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--purple),#6d28d9);font-weight:800;font-size:20px}
+  .step h3{font-size:16.5px;margin-bottom:7px}
+  .step p{color:var(--soft);font-size:14px;line-height:1.6}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:900px){.g4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.g4{grid-template-columns:1fr}}
+
+  .cert,.rev{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+  .cert img,.rev img{width:100%;height:230px;object-fit:cover;object-position:top;display:block;background:#12041f}
+  .cert .c-in,.rev .c-in{padding:16px 18px}
+  .cert h3,.rev h3{font-size:15.5px;font-weight:700;line-height:1.45}
+  .cert p,.rev p{color:var(--soft);font-size:13.5px;margin-top:4px}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:14px;margin-bottom:6px}
+
+  .about{background:linear-gradient(180deg,var(--bg2),var(--bg));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about-in{display:grid;grid-template-columns:1fr 1.4fr;gap:36px;align-items:center}
+  @media(max-width:760px){.about-in{grid-template-columns:1fr}}
+  .about img.cv{width:100%;border-radius:18px;border:1px solid var(--line)}
+  .about h2{font-size:30px;font-weight:800;margin-bottom:14px}
+  .about p{color:var(--soft);line-height:1.7;font-size:15.5px;margin-bottom:12px}
+  .skills{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 22px}
+  .skills span{background:rgba(147,51,234,.16);border:1px solid var(--line);color:var(--lav);
+    padding:7px 14px;border-radius:999px;font-size:13px;font-weight:500}
+
+  .contact-card{background:linear-gradient(135deg,#2a0a4e,#170630);border:1px solid var(--purple);border-radius:26px;
+    padding:48px 28px;text-align:center}
+  .contact-card h2{font-size:clamp(26px,4.4vw,36px);font-weight:800}
+  .contact-card p{color:var(--soft);margin:12px auto 28px;max-width:520px;line-height:1.65}
+  .socials{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+  .soc{padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;border:1.5px solid var(--purple2);color:#fff;transition:.2s}
+  .soc:hover{background:var(--purple);transform:translateY(-2px)}
+  .soc.main{background:var(--purple);border-color:var(--purple)}
+
+
+  /* polish */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  .svc,.step,.cert,.rev,.work-card{box-shadow:0 12px 32px rgba(0,0,0,.35)}
+  .work-card{transition:.25s}
+  .work-card:hover{transform:translateY(-5px);border-color:var(--purple)}
+  .filmstrip{background:#05010c;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:14px 0}
+  .film-track{display:flex;gap:14px;width:max-content;animation:roll 30s linear infinite}
+  .film-track img{height:120px;width:214px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+  @keyframes roll{to{transform:translateX(-50%)}}
+  .float-cta{position:fixed;right:18px;bottom:18px;z-index:60;background:linear-gradient(90deg,var(--purple),#7c1ded);
+    color:#fff;font-weight:700;font-size:14.5px;padding:14px 22px;border-radius:999px;box-shadow:0 12px 30px rgba(147,51,234,.5)}
+  .float-cta:hover{transform:translateY(-2px)}
+  .why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:900px){.why{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.why{grid-template-columns:1fr}}
+  .why .w{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+  .why .w b{display:block;font-size:17px;margin:8px 0 5px}
+  .why .w p{color:var(--soft);font-size:13.5px;line-height:1.55}
+  .why .w .ico{font-size:28px}
+  footer{padding:44px 20px 48px;text-align:center;color:#8f83ad;font-size:13.5px;border-top:1px solid var(--line)}
+  footer b{color:var(--lav)}
+  .foot-name{font-size:19px;font-weight:800;color:#fff;letter-spacing:.5px}
+  .foot-name span{color:var(--purple2)}
+  .foot-role{color:var(--lav);font-size:13px;letter-spacing:2px;margin-top:4px}
+  .foot-links,.foot-socials{display:flex;gap:8px 20px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .foot-links a{color:var(--soft);font-size:13.5px;font-weight:500}
+  .foot-links a:hover,.foot-socials a:hover{color:#fff}
+  .foot-socials a{color:var(--purple2);font-size:13.5px;font-weight:600}
+  .foot-copy{margin-top:20px;line-height:1.7}
+  /* final cta band */
+  .cta-band{background:linear-gradient(90deg,#2a0a4e,#4c1d95,#2a0a4e);border-top:1px solid var(--purple);border-bottom:1px solid var(--purple);
+    padding:44px 20px;text-align:center}
+  .cta-band h2{font-size:clamp(24px,4vw,34px);font-weight:800}
+  .cta-band p{color:var(--lav);margin:10px auto 24px;max-width:520px;line-height:1.6;font-size:15px}
+  /* small quality touches */
+  ::selection{background:var(--purple);color:#fff}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .nav-links a.active{color:#fff;border-bottom:2px solid var(--gold);padding-bottom:3px}
+  .to-top{position:fixed;left:18px;bottom:18px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+    background:rgba(23,6,48,.92);color:var(--lav);font-size:19px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;transition:.25s;box-shadow:0 10px 24px rgba(0,0,0,.4)}
+  .to-top.show{opacity:1;pointer-events:auto}
+  .to-top:hover{border-color:var(--purple2);color:#fff}
+
+  /* === effects pack === */
+  /* scroll progress */
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--purple),var(--gold));z-index:100}
+  /* preloader */
+  #preloader{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;flex-direction:column;gap:18px;
+    align-items:center;justify-content:center;transition:opacity .45s ease}
+  #preloader.done{opacity:0;pointer-events:none}
+  #preloader .mono-m{width:74px;height:74px;border-radius:20px;border:2px solid var(--purple);background:var(--card);
+    display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:800;color:var(--gold);
+    animation:mpulse 1s ease-in-out infinite}
+  @keyframes mpulse{50%{transform:scale(1.07);border-color:var(--purple2)}}
+  #preloader .bar{width:150px;height:3px;background:#2a1650;border-radius:99px;overflow:hidden}
+  #preloader .bar i{display:block;height:100%;width:40%;background:linear-gradient(90deg,var(--purple),var(--gold));border-radius:99px;animation:load 1.1s ease-in-out infinite}
+  @keyframes load{0%{transform:translateX(-110%)}100%{transform:translateX(400%)}}
+  /* hero glow blobs + particles */
+  .hero{overflow:hidden}
+  .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none;z-index:0}
+  .blob.b1{width:340px;height:340px;background:#7c1ded;top:-90px;left:-70px;animation:drift 11s ease-in-out infinite}
+  .blob.b2{width:280px;height:280px;background:#b8912a;bottom:-40px;right:-60px;opacity:.28;animation:drift 13s ease-in-out infinite reverse}
+  @keyframes drift{50%{transform:translate(34px,26px) scale(1.08)}}
+  .dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--purple2);opacity:.55;pointer-events:none;z-index:0;animation:floaty 7s ease-in-out infinite}
+  @keyframes floaty{50%{transform:translateY(-22px);opacity:.95}}
+  .hero>*{position:relative;z-index:1}
+  .hero .blob,.hero .dot{position:absolute}
+  /* typing roles */
+  .typer{margin-top:14px;font-size:clamp(15px,2.6vw,19px);font-weight:600;color:var(--soft);min-height:1.5em}
+  .typer #typeTxt{color:var(--gold)}
+  .typer .caret{display:inline-block;width:2px;height:1em;background:var(--gold);margin-left:3px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+  /* open-to-work pill */
+  .open-pill{display:inline-flex;align-items:center;gap:8px;margin-top:22px;border:1px solid rgba(55,214,122,.5);
+    background:rgba(55,214,122,.09);color:#7bf0ab;font-size:13px;font-weight:600;padding:8px 16px;border-radius:999px}
+  .open-pill i{width:8px;height:8px;border-radius:50%;background:#37d67a;animation:blink 1.6s infinite}
+  /* waveform */
+  .wave{display:flex;gap:3px;align-items:center;justify-content:center;height:34px;max-width:760px;margin:26px auto 0}
+  .wave i{flex:1;max-width:9px;background:linear-gradient(180deg,var(--purple2),var(--purple));border-radius:99px;height:30%;animation:wv 1.15s ease-in-out infinite}
+  @keyframes wv{0%,100%{transform:scaleY(.45)}50%{transform:scaleY(1.25)}}
+  /* button shine */
+  .btn-p{position:relative;overflow:hidden}
+  .btn-p::after{content:'';position:absolute;top:0;left:-80%;width:50%;height:100%;transform:skewX(-20deg);
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transition:left .55s ease}
+  .btn-p:hover::after{left:130%}
+  /* work cards glow + play pulse */
+  .work-card:hover{box-shadow:0 18px 44px rgba(147,51,234,.35)}
+  .play-ind{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;
+    background:rgba(13,2,24,.66);border:1.5px solid var(--purple2);color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:21px;pointer-events:none;z-index:2;animation:ppulse 1.8s ease-out infinite;transition:opacity .3s}
+  @keyframes ppulse{0%{box-shadow:0 0 0 0 rgba(192,132,252,.45)}100%{box-shadow:0 0 0 20px rgba(192,132,252,0)}}
+  .play-ind.off{opacity:0}
+  /* section heading shimmer + underline */
+  .sec-head .kicker{background:linear-gradient(90deg,var(--purple2),var(--gold),var(--purple2));background-size:200% 100%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;animation:shim 3.2s linear infinite}
+  @keyframes shim{to{background-position:200% 0}}
+  .sec-head h2{position:relative;display:inline-block;padding-bottom:12px}
+  .sec-head h2::after{content:'';position:absolute;left:50%;bottom:0;height:3px;width:0;border-radius:99px;
+    background:linear-gradient(90deg,var(--purple),var(--gold));transition:width .8s ease,left .8s ease}
+  .sec-head.in h2::after{width:64px;left:calc(50% - 32px)}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    html{scroll-behavior:auto}
+  }
+
+  /* === professional video-editor look === */
+  .mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace}
+  .rec .tc{color:var(--gold);letter-spacing:1px;font-family:ui-monospace,Menlo,Consolas,monospace}
+  .vf{position:relative;width:236px;height:236px;margin:0 auto 26px}
+  .vf .dp-ring{margin:0 auto}
+  .vf i{position:absolute;width:30px;height:30px;border:3px solid var(--gold);z-index:2}
+  .vf i.tl{top:-8px;left:-8px;border-right:none;border-bottom:none;border-radius:10px 0 0 0}
+  .vf i.tr{top:-8px;right:-8px;border-left:none;border-bottom:none;border-radius:0 10px 0 0}
+  .vf i.bl{bottom:-8px;left:-8px;border-right:none;border-top:none;border-radius:0 0 0 10px}
+  .vf i.br{bottom:-8px;right:-8px;border-left:none;border-top:none;border-radius:0 0 10px 0}
+  .vf .vf-tag{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);background:#000;border:1px solid var(--line);
+    color:var(--lav);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;letter-spacing:1.5px;
+    padding:3px 10px;border-radius:6px;white-space:nowrap;z-index:2}
+  /* editing timeline */
+  .timeline{max-width:760px;margin:52px auto 0;background:#0a0114;border:1px solid var(--line);border-radius:14px;
+    padding:14px 16px 12px;text-align:left;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  .tl-head{display:flex;justify-content:space-between;font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:10.5px;letter-spacing:1.5px;color:#9d8cc4;margin-bottom:10px}
+  .tl-head b{color:var(--gold);font-weight:600}
+  .tl-ruler{height:12px;border-bottom:1px solid var(--line);margin-bottom:8px;
+    background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 38px)}
+  .track{display:flex;align-items:center;gap:8px;margin-top:6px;position:relative}
+  .track .tname{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;color:#9d8cc4;width:22px;flex:none}
+  .clips{display:flex;gap:4px;flex:1}
+  .clip{height:20px;border-radius:5px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9px;
+    color:rgba(255,255,255,.85);display:flex;align-items:center;padding:0 7px;overflow:hidden;white-space:nowrap}
+  .c-v{background:linear-gradient(90deg,#7c1ded,#9333ea)}
+  .c-v2{background:linear-gradient(90deg,#5b21b6,#7c3aed)}
+  .c-a{background:linear-gradient(90deg,#8a6d1d,#b8912a);color:#fff8e1}
+  .c-t{background:#2a1650;border:1px solid var(--purple);color:var(--lav)}
+  .playhead{position:absolute;top:-24px;bottom:-2px;width:2px;background:#ff3b5c;animation:ph 9s linear infinite;z-index:3}
+  .playhead:before{content:'';position:absolute;top:-1px;left:-5px;border:6px solid transparent;border-top:8px solid #ff3b5c}
+  @keyframes ph{from{left:30px}to{left:calc(100% - 6px)}}
+  /* tools marquee */
+  .tools{background:#070113;border-bottom:1px solid var(--line);overflow:hidden;padding:13px 0}
+  .tools-track{display:flex;gap:0;width:max-content;animation:roll 26s linear infinite;
+    font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;letter-spacing:2.5px;color:var(--lav)}
+  .tools-track span{padding:0 26px;white-space:nowrap}
+  .tools-track b{color:var(--gold);font-weight:600}
+  /* work card editor badges */
+  .work-card .vwrap{position:relative}
+  .pbadge{position:absolute;top:12px;left:12px;z-index:2;background:rgba(0,0,0,.72);border:1px solid var(--line);
+    color:var(--lav);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;letter-spacing:1.2px;
+    padding:5px 10px;border-radius:6px;pointer-events:none}
+  .pbadge b{color:var(--gold);font-weight:600}
+  .sec-head .kicker{font-family:ui-monospace,Menlo,Consolas,monospace}
+  .tag{font-family:ui-monospace,Menlo,Consolas,monospace}
+
+  /* === message book + review forms === */
+  .form-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 24px;max-width:640px;margin:0 auto;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+  .field{margin-bottom:16px;text-align:left}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--lav);letter-spacing:.6px;margin-bottom:7px}
+  .field input,.field textarea,.field select{width:100%;background:#12041f;border:1px solid var(--line);border-radius:12px;
+    color:#fff;font-family:'Poppins',sans-serif;font-size:15px;padding:13px 15px;outline:none;transition:.2s}
+  .field input:focus,.field textarea:focus,.field select:focus{border-color:var(--purple2);box-shadow:0 0 0 3px rgba(147,51,234,.22)}
+  .field textarea{resize:vertical;min-height:96px}
+  .star-row{display:flex;gap:6px;font-size:30px;line-height:1}
+  .star-row button{background:none;border:none;cursor:pointer;color:#4a3577;font-size:30px;padding:2px;transition:.15s}
+  .star-row button.on{color:var(--gold);transform:scale(1.12)}
+  .form-note{font-size:12.5px;color:#9d8cc4;margin-top:14px;line-height:1.6}
+  .wall{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1120px;margin:30px auto 0}
+  @media(max-width:900px){.wall{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.wall{grid-template-columns:1fr}}
+  .wall:empty{display:none}
+  .msg-card{background:#170630;border:1px solid var(--line);border-radius:16px;padding:18px;text-align:left}
+  .msg-card .who{font-weight:700;font-size:15px;color:#fff}
+  .msg-card .when{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10.5px;color:#9d8cc4;letter-spacing:1px}
+  .msg-card p{color:var(--soft);font-size:14px;line-height:1.6;margin-top:7px;white-space:pre-wrap;word-break:break-word}
+  .msg-card .stars{margin-bottom:4px}
+  .rec-row{display:flex;gap:10px}
+  .rec-row button{flex:1;background:#12041f;border:1.5px solid var(--line);color:var(--soft);border-radius:12px;
+    padding:12px 10px;font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:600;cursor:pointer;transition:.2s}
+  .rec-row button.on-yes{border-color:#37d67a;color:#7bf0ab;background:rgba(55,214,122,.1)}
+  .rec-row button.on-no{border-color:#ff3b5c;color:#ff93a8;background:rgba(255,59,92,.1)}
+  .rec-badge{display:inline-block;font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:999px;margin-top:10px;letter-spacing:.3px}
+  .rec-badge.yes{background:rgba(55,214,122,.14);color:#7bf0ab;border:1px solid rgba(55,214,122,.45)}
+  .rec-badge.no{background:rgba(255,59,92,.12);color:#ff93a8;border:1px solid rgba(255,59,92,.45)}
+  .empty-note{color:#9d8cc4;font-size:14px;margin-top:22px}
+
+  /* === skillx assignments === */
+  .sx-card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+  .sx-card:hover{transform:translateY(-5px);border-color:var(--purple);box-shadow:0 18px 44px rgba(147,51,234,.35)}
+  .sx-card .vwrap{position:relative}
+  .sx-card video{width:100%;height:230px;object-fit:contain;display:block;background:#000}
+  .sx-vlabel{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spacing:1px;color:var(--lav);padding:12px 14px 7px}
+  .sx-in{padding:18px 20px}
+  .sx-badge{display:inline-block;background:rgba(147,51,234,.2);color:var(--gold);border:1px solid var(--line);
+    font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;font-weight:600;padding:4px 11px;border-radius:999px;margin-bottom:10px;letter-spacing:1px}
+  .sx-card h3{font-size:16.5px;font-weight:700;line-height:1.4}
+  .sx-teacher{color:var(--gold);font-size:13px;font-weight:600;margin-top:5px}
+  .sx-card p{color:var(--soft);font-size:13.5px;margin-top:6px;line-height:1.6}
+  .sx-link{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;
+    background:linear-gradient(135deg,#2a0a4e,#170630);border:1px solid var(--purple);border-radius:20px;padding:24px 26px;transition:.2s}
+  .sx-link:hover{transform:translateY(-3px);border-color:var(--purple2)}
+  .sx-link b{display:block;font-size:17px}
+  .sx-link .sub{color:var(--soft);font-size:13.5px}
+  .sx-arrow{font-size:26px;color:var(--gold);flex:none}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<div id="preloader"><div class="mono-m">M</div><div class="bar"><i></i></div></div>
+
+<nav>
+  <div class="nav-in">
+    <div class="logo">MARIA<span>ASIF</span></div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">My Work</a>
+      <a href="#skillx">SkillX Course</a>
+      <a href="#process">Process</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#payments">Payments</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#messagebook">Message Book</a>
+    </div>
+    <a class="nav-cta" href="#hire">Hire Me</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <span class="dot" style="top:120px;left:12%"></span><span class="dot" style="top:200px;right:14%;animation-delay:1.2s"></span>
+  <span class="dot" style="top:320px;left:20%;animation-delay:2s"></span><span class="dot" style="top:90px;right:26%;animation-delay:.6s"></span>
+  <span class="dot" style="top:420px;right:10%;animation-delay:2.8s"></span><span class="dot" style="top:480px;left:8%;animation-delay:1.6s"></span>
+  <div class="rec"><i></i> REC&nbsp;•&nbsp;<span class="tc" id="tc">00:00:00:00</span>&nbsp;•&nbsp;VIDEO EDITOR</div>
+  <div class="vf"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i><div class="dp-ring"><img src="assets/dp.jpg" alt="Maria Asif"></div><div class="vf-tag">CAM A • MARIA ASIF</div></div>
+  <h1>Maria Asif<br><span class="grad">Video Editor &amp; AI Content Creator</span></h1>
+  <div class="role">CREATE • EDIT • INSPIRE</div>
+  <div class="typer">I am a <span id="typeTxt"></span><span class="caret"></span></div>
+  <p>I turn raw footage into scroll-stopping videos — AI influencer videos, product ads, reels,
+     motion graphics and cartoon stories that help brands grow and clients earn.</p>
+  <div class="cta-row">
+    <a class="btn btn-p" href="#contact">📩 Order Your Video</a>
+    <a class="btn btn-o" href="#work">▶ Watch My Work</a>
+  </div>
+  <div><span class="open-pill"><i></i> Open to new projects</span></div>
+  <div class="stats">
+    <div class="stat"><b>6+</b><span>Services</span></div>
+    <div class="stat"><b>5+</b><span>Video Projects</span></div>
+    <div class="stat"><b>3</b><span>Certificates</span></div>
+    <div class="stat"><b>3</b><span>Happy Clients</span></div>
+  </div>
+  <div class="timeline">
+    <div class="tl-head"><span>PROJECT — <b>MARIA_ASIF_SHOWREEL</b></span><span>SEQ 01 • 4K</span></div>
+    <div class="tl-ruler"></div>
+    <div class="track"><span class="tname">V2</span><div class="clips"><div class="clip c-t" style="width:26%">TITLES</div><div class="clip c-t" style="width:38%">KINETIC TEXT</div><div class="clip c-t" style="width:20%">LOGO</div></div><div class="playhead"></div></div>
+    <div class="track"><span class="tname">V1</span><div class="clips"><div class="clip c-v" style="width:32%">RAW FOOTAGE</div><div class="clip c-v2" style="width:24%">CUT ✂</div><div class="clip c-v" style="width:36%">FINAL EDIT</div></div></div>
+    <div class="track"><span class="tname">A1</span><div class="clips"><div class="clip c-a" style="width:58%">VOICE-OVER ♪</div><div class="clip c-a" style="width:34%">MUSIC</div></div></div>
+  </div>
+  <div class="wave" aria-hidden="true"><i></i><i style="animation-delay:.08s"></i><i style="animation-delay:.16s"></i><i style="animation-delay:.24s"></i><i style="animation-delay:.32s"></i><i style="animation-delay:.4s"></i><i style="animation-delay:.48s"></i><i style="animation-delay:.56s"></i><i style="animation-delay:.64s"></i><i style="animation-delay:.72s"></i><i style="animation-delay:.8s"></i><i style="animation-delay:.88s"></i><i style="animation-delay:.96s"></i><i style="animation-delay:1.04s"></i><i style="animation-delay:.96s"></i><i style="animation-delay:.88s"></i><i style="animation-delay:.8s"></i><i style="animation-delay:.72s"></i><i style="animation-delay:.64s"></i><i style="animation-delay:.56s"></i><i style="animation-delay:.48s"></i><i style="animation-delay:.4s"></i><i style="animation-delay:.32s"></i><i style="animation-delay:.24s"></i></div>
+</header>
+
+<div class="filmstrip"><div class="film-track">
+  <img src="assets/cover-raw-final.jpg" alt="Raw to Final video editing project" loading="lazy"><img src="assets/cover-motion.jpg" alt="Motion graphics reel" loading="lazy">
+  <img src="assets/cover-cartoon.jpg" alt="Chhoti Chidiya aur Beej cartoon story" loading="lazy"><img src="assets/cover-motivational.jpg" alt="Motivational voice-over visual video" loading="lazy">
+  <img src="assets/cover-before-after.jpg" alt="Before and after design project" loading="lazy"><img src="assets/cert-google.jpg" alt="Google AI Essentials certificate" loading="lazy">
+  <img src="assets/cover-raw-final.jpg" alt="" loading="lazy" aria-hidden="true"><img src="assets/cover-motion.jpg" alt="" loading="lazy" aria-hidden="true">
+  <img src="assets/cover-cartoon.jpg" alt="" loading="lazy" aria-hidden="true"><img src="assets/cover-motivational.jpg" alt="" loading="lazy" aria-hidden="true">
+  <img src="assets/cover-before-after.jpg" alt="" loading="lazy" aria-hidden="true"><img src="assets/cert-google.jpg" alt="" loading="lazy" aria-hidden="true">
+</div></div>
+
+<div class="tools"><div class="tools-track">
+  <span>CAPCUT PREMIUM PRO <b>✦</b></span><span>AI VIDEO GENERATION <b>✦</b></span><span>MOTION GRAPHICS <b>✦</b></span><span>KINETIC TEXT <b>✦</b></span><span>VOICE-OVER SYNC <b>✦</b></span><span>REELS EDITING <b>✦</b></span>
+  <span>CAPCUT PREMIUM PRO <b>✦</b></span><span>AI VIDEO GENERATION <b>✦</b></span><span>MOTION GRAPHICS <b>✦</b></span><span>KINETIC TEXT <b>✦</b></span><span>VOICE-OVER SYNC <b>✦</b></span><span>REELS EDITING <b>✦</b></span>
+</div></div>
+
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What I Do</div>
+      <h2>My Services</h2>
+      <p>Professional editing for brands, businesses and creators</p>
+    </div>
+    <div class="grid g3">
+      <div class="svc"><div class="ico">🤖</div><h3>AI Influencer Videos</h3><p>Realistic AI influencer content for skincare, beauty and lifestyle brands — script, visuals and final edit.</p></div>
+      <div class="svc"><div class="ico">🛍️</div><h3>Product Ads</h3><p>Short, attractive product commercials that show benefits clearly and turn viewers into buyers.</p></div>
+      <div class="svc"><div class="ico">🎬</div><h3>Reels &amp; Shorts</h3><p>Fast, trendy vertical videos for Instagram, TikTok, Facebook and YouTube — hooks, captions and music included.</p></div>
+      <div class="svc"><div class="ico">✨</div><h3>Motion Graphics</h3><p>Kinetic text, animated promos and brand intros in your own colours and style.</p></div>
+      <div class="svc"><div class="ico">🐦</div><h3>Cartoon &amp; Moral Stories</h3><p>Animated story videos for kids with voice-over, captions and a meaningful lesson in every story.</p></div>
+      <div class="svc"><div class="ico">🎙️</div><h3>Podcast Editing</h3><p>Clean podcast video edits with covers, captions and highlights ready for every platform.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Portfolio</div>
+      <h2>My Work</h2>
+      <p>Press play — real projects, real results</p>
+    </div>
+    <div class="grid g2">
+      <div class="work-card">
+        <div class="vwrap"><span class="pbadge">PROJECT <b>01</b> • EDIT</span><video controls preload="none" poster="assets/cover-raw-final.jpg" src="assets/work-raw-final.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="wc-in"><span class="tag">VIDEO EDITING</span><h3>Raw to Final — Video Editing</h3><p>Watch raw footage transform into a polished final video.</p></div>
+      </div>
+      <div class="work-card">
+        <div class="vwrap"><span class="pbadge">PROJECT <b>02</b> • MOTION</span><video controls preload="none" poster="assets/cover-motion.jpg" src="assets/work-motion.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="wc-in"><span class="tag">MOTION GRAPHICS</span><h3>Motion Graphics Reel</h3><p>Full-screen motion design with bold text animation.</p></div>
+      </div>
+      <div class="work-card">
+        <div class="vwrap"><span class="pbadge">PROJECT <b>03</b> • DESIGN</span><video controls preload="none" poster="assets/cover-before-after.jpg" src="assets/work-before-after.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="wc-in"><span class="tag">VISUAL DESIGN</span><h3>Before / After — Design</h3><p>How a simple frame becomes a professional visual.</p></div>
+      </div>
+      <div class="work-card">
+        <div class="vwrap"><span class="pbadge">PROJECT <b>04</b> • VOICE-OVER</span><video controls preload="none" poster="assets/cover-motivational.jpg" src="assets/work-motivational.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="wc-in"><span class="tag">VOICE-OVER VISUAL</span><h3>Motivational Visual Video</h3><p>Kinetic text perfectly synced with a motivational voice-over.</p></div>
+      </div>
+      <div class="work-card">
+        <div class="vwrap"><span class="pbadge">PROJECT <b>05</b> • CARTOON</span><video controls preload="none" poster="assets/cover-cartoon.jpg" src="assets/work-cartoon.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="wc-in"><span class="tag">CARTOON STORY</span><h3>Chhoti Chidiya aur Beej — Moral Cartoon</h3><p>A complete animated story with voice-over, captions and a lesson: patience and hard work always pay off.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skillx">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">SkillX AI Course</div>
+      <h2>My SkillX Assignments</h2>
+      <p>I completed the SkillX AI Pro course. Here is my assignment work from the course — every project below is my own coursework. Press play to watch the assignment videos.</p>
+    </div>
+    <div class="grid g3">
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 01</span><h3>Prompt Engineering Journey</h3>
+        <p>Where it started — learning how a simple prompt becomes a detailed, engineered prompt that produces studio-quality AI images and videos.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 02</span><h3>Character Sheet Designing</h3>
+        <div class="sx-teacher">👩‍🏫 Teacher: Miss Maham</div>
+        <p>Complete character sheets for two cute 3D characters — Baby Bunny and Baby Polar Bear — with turnaround views, 6 expressions and 6 poses each, made for consistent cartoon stories.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 03</span><h3>AI Video Editor — 12 Images Collage</h3>
+        <p>One prompt, many styles: a 12-image collage for "A1 Video Editor" — posters, editing setups and AI studio visuals, all generated from my own prompts.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 04</span><h3>Thumbnail Designing</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Usama Bin Habib</div>
+        <p>Four high-CTR thumbnail designs: a video-editing software comparison, a kids' cartoon thumbnail, and two Free Fire gaming thumbnails.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-vlabel">PROJECT 01 — MUNCHIFY CHINESE MAGGI</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a05-2.jpg" src="assets/skillx/a05-2.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-vlabel">PROJECT 02 — LUXURY STUDIO LIPSTICK</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a05-1.jpg" src="assets/skillx/a05-1.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 05</span><h3>Product Advertising Storyboard</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Najeeb Ullah</div>
+        <p>10-second TVC storyboards for two products — Munchify Chinese Maggi and Luxury Studio Lipstick — designed frame by frame and brought to life as videos.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-vlabel">PART 01 — BAMBY: THE DREAM THIEF OF LUMA VALLEY</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a06-1.jpg" src="assets/skillx/a06-1.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-vlabel">PART 02 — AI MOVIE</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a06-2.jpg" src="assets/skillx/a06-2.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 06</span><h3>AI Cartoon Movie &amp; AI Movie</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Najeeb Ullah</div>
+        <p>Two AI movies designed end-to-end: the cartoon "Bamby — The Dream Thief of Luma Valley" and the heart-warming story "The Cat I Wanted to Keep".</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-vlabel">LUMÉRA — HYDRO DEW SERUM</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a07.jpg" src="assets/skillx/a07-1.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-vlabel">LUXURY STUDIO — CLEAR LIP GLOSS</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a07b.jpg" src="assets/skillx/a07-2.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 07</span><h3>AI Influencer Videos</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Najeeb Ullah</div>
+        <p>Two AI influencer product videos in a luxury purple style — LUMÉRA Hydro Dew Serum and Luxury Studio Clear Lip Gloss.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a08.jpg" src="assets/skillx/a08.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 08</span><h3>Podcast Story — My Journey</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Najeeb Ullah</div>
+        <p>A podcast story video about my journey — learning, practice and progress in digital skills, AI and video editing.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-vlabel">FAMILY MOMENTS — AI ANIMATED STORY</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a09.jpg" src="assets/skillx/a09-1.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-vlabel">LEARN ABC &amp; COLORS WITH BUNNY</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/a09b.jpg" src="assets/skillx/a09-2.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 09</span><h3>AI Animated Stories</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Ajju Bhai</div>
+        <p>Two AI-animated videos: "Family Moments", a heart-warming family story, and "Learn ABC &amp; Colors with Bunny", a fun learning video for kids.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 10</span><h3>YouTube Automation</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Ammar Nasir</div>
+        <p>Class notes on YouTube Automation — what an automated channel is and how it is planned and run.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 12</span><h3>Pixar Animation — Character Creations</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Ajju Bhai</div>
+        <p>My 3D Pixar-style characters — Najeeb Ullah, Sir Haroon and Hamza — plus cute kitten characters, created while learning AI animation.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">ASSIGNMENT 13</span><h3>Scriptwriting — 5-Step Formula</h3>
+        <div class="sx-teacher">👨‍🏫 Teacher: Sir Ammar Nasir</div>
+        <p>Scriptwriting class — the 5-Step Formula for writing video scripts, from a strong hook to a clear, memorable message.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-in"><span class="sx-badge">PRACTICE WORK</span><h3>Prompt Engineering Practice</h3>
+        <p>My practice posts: chef character panels, studio product photography, before/after transformations and creative AI images — every visual generated from my own written prompts.</p></div>
+      </div>
+      <div class="sx-card">
+        <div class="sx-vlabel">BRAND PROJECT — VIDEO 1</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/final-1.jpg" src="assets/skillx/final-1.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-vlabel">BRAND PROJECT — VIDEO 2</div>
+        <div class="vwrap"><video controls preload="none" poster="assets/skillx/final-2.jpg" src="assets/skillx/final-2.mp4"></video><span class="play-ind">▶</span></div>
+        <div class="sx-in"><span class="sx-badge">FINAL ASSIGNMENT</span><h3>Maaivisul Studio — My Own Brands Project</h3>
+        <div class="sx-teacher">👩‍🏫 Teacher: Miss Maham</div>
+        <p>My complete branding project: two brands of my own — Munchify (street food &amp; noodles) and Luxury Studio (premium cosmetics) — logos, packaging and storyboard, all designed by me.</p></div>
+      </div>
+    </div>
+    <a class="sx-link" href="https://muse.ai/s/skillx-course-notes-by-maria-asif-xbm6xe8xsxx8xnxbxz/KAEVGf8KKjJru5Yg6Cvb1oGh4O3zmaWYcKeqRYK-Qeg" target="_blank" rel="noopener">
+      <div><b>📚 See my full SkillX course notes website</b><span class="sub">All my class notes, assignment details and course work in one place</span></div>
+      <span class="sx-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">How It Works</div>
+      <h2>Simple Process</h2>
+      <p>From your raw video to a ready-to-post final — in 4 easy steps</p>
+    </div>
+    <div class="grid g4">
+      <div class="step"><div class="num">1</div><h3>Send Your Video</h3><p>Share your raw footage and tell me what you want.</p></div>
+      <div class="step"><div class="num">2</div><h3>I Edit &amp; Design</h3><p>Cutting, effects, captions, music and motion graphics.</p></div>
+      <div class="step"><div class="num">3</div><h3>You Review</h3><p>Watch the preview and ask for any changes.</p></div>
+      <div class="step"><div class="num">4</div><h3>Final Delivery</h3><p>Get your ready-to-post video, on time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Qualified</div>
+      <h2>My Certificates</h2>
+    </div>
+    <div class="grid g3">
+      <div class="cert"><img src="assets/cert-google.jpg" alt="Google AI Essentials Certificate" loading="lazy"><div class="c-in"><h3>Google AI Essentials</h3><p>Coursera Specialization — Maria Asif Khan, Sep 2025</p></div></div>
+      <div class="cert"><img src="assets/cert-digiskills-video.jpg" alt="DigiSkills Video Editing Certificate" loading="lazy"><div class="c-in"><h3>Video Editing, Animation &amp; Vlogging</h3><p>DigiSkills Training Program 3.0 — Batch 03</p></div></div>
+      <div class="cert"><img src="assets/cert-digiskills-freelancing.jpg" alt="DigiSkills Freelancing Certificate" loading="lazy"><div class="c-in"><h3>Freelancing</h3><p>DigiSkills Training Program 3.0 — Batch 03</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Client Love</div>
+      <h2>What Clients Say</h2>
+    </div>
+    <div class="grid g3">
+      <div class="rev"><img src="assets/review-1.png" alt="Review from Abdullah — Sign Wave Advertising" loading="lazy"><div class="c-in"><div class="stars">★★★★★</div><h3>Abdullah — Sign Wave Advertising</h3><p>"Great work! Highly recommended."</p></div></div>
+      <div class="rev"><img src="assets/review-2.jpg" alt="Review from Abdullah — client project" loading="lazy"><div class="c-in"><div class="stars">★★★★★</div><h3>Abdullah — Client Project</h3><p>"Excellent work! Very professional, reliable, and delivered exactly as promised."</p></div></div>
+      <div class="rev"><img src="assets/review-3.png" alt="Review from Muhammad Sharjeel — Malik's Paint & Wallpapers" loading="lazy"><div class="c-in"><div class="stars">★★★★★</div><h3>Muhammad Sharjeel — Malik's Paint &amp; Wallpapers</h3><p>Praised the wallpaper promo video edit and logo presentation.</p></div></div>
+    </div>
+    <div class="wall" id="reviewWall"></div>
+  </div>
+</section>
+
+<section id="leavereview" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Your Turn</div>
+      <h2>Leave a Review</h2>
+      <p>Worked with me? Tell others how it went — your review appears right here</p>
+    </div>
+    <form class="form-card" id="reviewForm">
+      <div class="field"><label for="rvName">Your Name</label><input id="rvName" type="text" maxlength="60" placeholder="e.g. Ahmed — My Brand" required></div>
+      <div class="field"><label>Your Rating</label>
+        <div class="star-row" id="starRow">
+          <button type="button" data-v="1" class="on">★</button><button type="button" data-v="2" class="on">★</button><button type="button" data-v="3" class="on">★</button><button type="button" data-v="4" class="on">★</button><button type="button" data-v="5" class="on">★</button>
+        </div>
+      </div>
+      <div class="field"><label>Would you recommend hiring Maria?</label>
+        <div class="rec-row" id="recRow">
+          <button type="button" id="recYes" class="on-yes">👍 Yes — Hire Her!</button>
+          <button type="button" id="recNo">👎 Not Really</button>
+        </div>
+      </div>
+      <div class="field"><label for="rvText">Your Review</label><textarea id="rvText" maxlength="500" placeholder="Write your experience..." required></textarea></div>
+      <button class="btn btn-p" type="submit" style="width:100%">★ Post My Review</button>
+      <p class="form-note">Reviews posted here are saved in this browser and shown on this page. To reach Maria directly, message her on Instagram below.</p>
+    </form>
+  </div>
+</section>
+
+<section id="payments" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Proof, Not Promises</div>
+      <h2>Payments Received</h2>
+      <p>Real payments from real client work — Rs 9,750 received so far</p>
+    </div>
+    <div class="grid g3">
+      <div class="cert"><img src="assets/payout-1.jpg" alt="Payment received — Rs 1,500, 4 Sep 2026" loading="lazy"><div class="c-in"><h3>Rs 1,500 Received</h3><p>Client project payment — 4 Sep 2026</p></div></div>
+      <div class="cert"><img src="assets/payout-2.jpg" alt="Payment received — Rs 1,500, 7 Sep 2026" loading="lazy"><div class="c-in"><h3>Rs 1,500 Received</h3><p>Client project payment — 7 Sep 2026</p></div></div>
+      <div class="cert"><img src="assets/payout-3.jpg" alt="Payment received — Rs 1,500, 13 Sep 2026" loading="lazy"><div class="c-in"><h3>Rs 1,500 Received</h3><p>Client project payment — 13 Sep 2026</p></div></div>
+      <div class="cert"><img src="assets/payout-4.jpg" alt="Payment received for the Chef AI project — Rs 5,250, 31 Oct 2026" loading="lazy"><div class="c-in"><h3>Rs 5,250 Received</h3><p>Chef AI Project payment — 31 Oct 2026</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap about-in">
+    <div>
+      <h2>About Me</h2>
+      <p>I'm <b style="color:#fff">Maria Asif</b>, a video editor and AI content creator from Karachi, Pakistan.
+         I help businesses and creators grow with videos that look professional and feel alive.</p>
+      <p>My freelance work includes brand videos for Sign Wave Advertising LLC, Al Malah Neon LLC and
+         Malik's Paint &amp; Wallpapers — delivered on time, with happy clients.</p>
+      <div class="skills">
+        <span>AI Video Generation</span><span>CapCut Premium Pro</span><span>Motion Graphics</span>
+        <span>Reels Editing</span><span>Product Ads</span><span>Cartoon Stories</span><span>Voice-over Visuals</span>
+      </div>
+      <a class="btn btn-o" href="assets/maria-asif-cv.pdf" download>⬇ Download My CV</a>
+    </div>
+    <img class="cv" src="assets/dp.jpg" alt="Maria Asif — Video Editor & AI Content Creator from Karachi" loading="lazy">
+  </div>
+</section>
+
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div class="kicker">Why Me</div><h2>Why Clients Choose Me</h2></div>
+    <div class="why">
+      <div class="w"><div class="ico">⚡</div><b>Fast Delivery</b><p>Your video on time, every time — no waiting for weeks.</p></div>
+      <div class="w"><div class="ico">🎯</div><b>Made to Sell</b><p>Every edit is designed to hold attention and bring customers.</p></div>
+      <div class="w"><div class="ico">🔁</div><b>Easy Revisions</b><p>Not happy with a part? I fix it until it feels right.</p></div>
+      <div class="w"><div class="ico">💜</div><b>Personal Care</b><p>You talk directly with me — your project gets full attention.</p></div>
+    </div>
+  </div>
+</section>
+<section id="messagebook" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Guestbook</div>
+      <h2>Message Book</h2>
+      <p>Visiting my page? Leave a sweet message in my book</p>
+    </div>
+    <form class="form-card" id="msgForm">
+      <div class="field"><label for="msName">Your Name</label><input id="msName" type="text" maxlength="60" placeholder="Your name" required></div>
+      <div class="field"><label for="msText">Your Message</label><textarea id="msText" maxlength="500" placeholder="Write your message..." required></textarea></div>
+      <button class="btn btn-p" type="submit" style="width:100%">✍️ Write in Message Book</button>
+      <p class="form-note">Your message is saved in this browser and shown in the book below. For work orders, please message Maria on <a href="https://www.instagram.com/its.mariaasif" target="_blank" rel="noopener" style="color:var(--purple2);font-weight:600">Instagram @its.mariaasif</a> — she replies there.</p>
+    </form>
+    <div class="wall" id="msgWall"></div>
+    <p class="empty-note" id="msgEmpty" style="text-align:center">No messages yet — be the first to write in my book 💜</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Let's Make Your Video ✦</h2>
+      <p>Ready to grow your brand with professional videos? Message me today —
+         I'll reply with ideas for your project.</p>
+      <div class="socials">
+        <a class="soc main" href="https://www.instagram.com/its.mariaasif" target="_blank" rel="noopener">📸 Instagram — @its.mariaasif</a>
+        <a class="soc" href="https://www.facebook.com/profile.php?id=61596009862495" target="_blank" rel="noopener">📘 Facebook</a>
+        <a class="soc" href="https://www.behance.net/mariaasif8" target="_blank" rel="noopener">🎨 Behance Portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hire" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Hire Me</div>
+      <h2>Start Your Project</h2>
+      <p>Fill this quick form — your request comes straight to my WhatsApp</p>
+    </div>
+    <form class="form-card" id="hireForm" novalidate>
+      <div class="field"><label for="hName">Your Name</label><input id="hName" type="text" maxlength="60" placeholder="Your name" required></div>
+      <div class="field"><label for="hService">Service You Need</label>
+        <select id="hService">
+          <option>Video Editing</option>
+          <option>AI Video Generation</option>
+          <option>Motion Graphics</option>
+          <option>Reels &amp; Shorts Editing</option>
+          <option>Voice-over Sync Video</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="hDetails">Project Details</label><textarea id="hDetails" maxlength="800" placeholder="Tell me about your video — topic, length, style, anything you have in mind..." required></textarea></div>
+      <p id="hErr" style="display:none;color:#ff93a8;font-size:13.5px;margin-bottom:14px"></p>
+      <button class="btn btn-p" type="submit" style="width:100%">📩 Send Hire Request on WhatsApp</button>
+      <p class="form-note">Tapping Submit opens WhatsApp — press Send there and your request reaches Maria directly.</p>
+    </form>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready to work together?</h2>
+  <p>Tell me about your video — send me a message on Instagram and let's create something your audience will love.</p>
+  <a class="btn btn-p" href="https://www.instagram.com/its.mariaasif" target="_blank" rel="noopener">📸 Message Me on Instagram</a>
+</div>
+
+<footer>
+  <div class="foot-name">MARIA<span>ASIF</span></div>
+  <div class="foot-role">VIDEO EDITOR &amp; AI CONTENT CREATOR</div>
+  <div class="foot-links">
+    <a href="#services">Services</a><a href="#work">My Work</a><a href="#skillx">SkillX Course</a><a href="#process">Process</a>
+    <a href="#certificates">Certificates</a><a href="#payments">Payments</a><a href="#reviews">Reviews</a><a href="#about">About</a>
+    <a href="#messagebook">Message Book</a><a href="#contact">Contact</a>
+  </div>
+  <div class="foot-socials">
+    <a href="https://www.instagram.com/its.mariaasif" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61596009862495" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.behance.net/mariaasif8" target="_blank" rel="noopener">Behance</a>
+  </div>
+  <div class="foot-copy">© 2026 <b>Maria Asif</b> — Video Editor &amp; AI Content Creator • Karachi, Pakistan<br>
+  Create • Edit • Inspire</div>
+</footer>
+
+
+<a class="float-cta" href="#hire">📩 Hire Me</a>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+<script>
+  /* live timecode */
+  const tcEl = document.getElementById('tc'); let frames = 0;
+  setInterval(() => { frames++; const f = frames % 24, s = Math.floor(frames/24) % 60, m = Math.floor(frames/1440) % 60, h = Math.floor(frames/86400);
+    const p = n => String(n).padStart(2,'0'); if (tcEl) tcEl.textContent = p(h)+':'+p(m)+':'+p(s)+':'+p(f); }, 1000/24);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }), {threshold:.12});
+  document.querySelectorAll('.svc,.step,.cert,.rev,.work-card,.why .w,.stat,.sx-card,.sx-link').forEach(el => { el.classList.add('reveal'); io.observe(el); });
+
+  /* === message book + reviews (saved in this browser) === */
+  const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const load = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) || d; } catch(e) { return d; } };
+  const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {} };
+  const when = ts => new Date(ts).toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
+
+  const msgWall = document.getElementById('msgWall'), msgEmpty = document.getElementById('msgEmpty');
+  let msgs = load('maria-msgbook-v1', []);
+  function renderMsgs(){
+    msgWall.innerHTML = msgs.map(m => `<div class="msg-card"><span class="who">${esc(m.n)}</span> <span class="when">${when(m.t)}</span><p>${esc(m.x)}</p></div>`).join('');
+    msgEmpty.style.display = msgs.length ? 'none' : 'block';
+  }
+  renderMsgs();
+  document.getElementById('msgForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const n = document.getElementById('msName').value.trim(), x = document.getElementById('msText').value.trim();
+    if (!n || !x) return;
+    msgs.unshift({n, x, t: Date.now()}); msgs = msgs.slice(0, 60); save('maria-msgbook-v1', msgs); renderMsgs(); e.target.reset();
+  });
+
+  const starRow = document.getElementById('starRow'); let rating = 5;
+  starRow.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    rating = +b.dataset.v;
+    starRow.querySelectorAll('button').forEach(s => s.classList.toggle('on', +s.dataset.v <= rating));
+  });
+  let recYes = true;
+  const btnYes = document.getElementById('recYes'), btnNo = document.getElementById('recNo');
+  function paintRec(){ btnYes.classList.toggle('on-yes', recYes); btnNo.classList.toggle('on-no', !recYes); }
+  btnYes.addEventListener('click', () => { recYes = true; paintRec(); });
+  btnNo.addEventListener('click', () => { recYes = false; paintRec(); });
+  const rvWall = document.getElementById('reviewWall');
+  let revs = load('maria-reviews-v1', []);
+  function renderRevs(){
+    rvWall.innerHTML = revs.map(r => `<div class="msg-card"><div class="stars">${'★'.repeat(r.s)}${'☆'.repeat(5 - r.s)}</div><span class="who">${esc(r.n)}</span> <span class="when">${when(r.t)}</span><p>${esc(r.x)}</p><span class="rec-badge ${r.c === false ? 'no' : 'yes'}">${r.c === false ? '👎 Does not recommend' : '👍 Recommends hiring Maria'}</span></div>`).join('');
+  }
+  renderRevs();
+  document.getElementById('reviewForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const n = document.getElementById('rvName').value.trim(), x = document.getElementById('rvText').value.trim();
+    if (!n || !x) return;
+    revs.unshift({n, x, s: rating, c: recYes, t: Date.now()}); revs = revs.slice(0, 60); save('maria-reviews-v1', revs); renderRevs(); e.target.reset();
+    rating = 5; starRow.querySelectorAll('button').forEach(s => s.classList.add('on'));
+    recYes = true; paintRec();
+    document.getElementById('reviews').scrollIntoView({behavior:'smooth'});
+  });
+
+  /* back to top */
+  const toTop = document.getElementById('toTop');
+  addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), {passive:true});
+  toTop.addEventListener('click', () => scrollTo({top:0, behavior:'smooth'}));
+
+  /* active nav highlight */
+  const navMap = {};
+  document.querySelectorAll('.nav-links a').forEach(a => navMap[a.getAttribute('href').slice(1)] = a);
+  const secIO = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting && navMap[e.target.id]) {
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      navMap[e.target.id].classList.add('active');
+    }
+  }), {rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(navMap).forEach(id => { const s = document.getElementById(id); if (s) secIO.observe(s); });
+
+  /* preloader — fades on load, hard cap 1.2s */
+  const pre = document.getElementById('preloader');
+  const hidePre = () => pre && pre.classList.add('done');
+  addEventListener('load', () => setTimeout(hidePre, 250));
+  setTimeout(hidePre, 1200);
+
+  /* scroll progress bar */
+  const prog = document.getElementById('progress');
+  addEventListener('scroll', () => {
+    const h = document.documentElement;
+    prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  }, {passive:true});
+
+  /* typing roles */
+  const roles = ['Video Editor', 'AI Content Creator', 'Motion Graphics Artist'];
+  const typeEl = document.getElementById('typeTxt');
+  if (typeEl) {
+    let ri = 0, ci = 0, del = false;
+    (function tick(){
+      const word = roles[ri];
+      typeEl.textContent = word.slice(0, ci);
+      if (!del) { ci++; if (ci > word.length) { del = true; return setTimeout(tick, 1500); } }
+      else { ci--; if (ci === 0) { del = false; ri = (ri + 1) % roles.length; } }
+      setTimeout(tick, del ? 38 : 78);
+    })();
+  }
+
+  /* count-up stats */
+  const statIO = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, end = parseInt(el.textContent), suf = el.textContent.replace(/[0-9]/g, '');
+    let t0 = null;
+    (function step(ts){
+      if (!t0) t0 = ts;
+      const p = Math.min((ts - t0) / 1100, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + suf;
+      if (p < 1) requestAnimationFrame(step);
+    })(performance.now());
+    statIO.unobserve(el);
+  }), {threshold:.5});
+  document.querySelectorAll('.stat b').forEach(el => statIO.observe(el));
+
+  /* staggered reveal within groups + section heading underlines */
+  document.querySelectorAll('.grid,.why,.stats,.wall').forEach(g =>
+    [...g.children].forEach((c, i) => c.style.transitionDelay = (i % 4) * 80 + 'ms'));
+  const headIO = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); headIO.unobserve(e.target); }
+  }), {threshold:.4});
+  document.querySelectorAll('.sec-head').forEach(h => headIO.observe(h));
+
+  /* hire form -> WhatsApp */
+  document.getElementById('hireForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const n = document.getElementById('hName').value.trim(),
+          s = document.getElementById('hService').value,
+          d = document.getElementById('hDetails').value.trim(),
+          err = document.getElementById('hErr');
+    if (!n || !d) {
+      err.textContent = 'Please write your name and a few lines about your project.';
+      err.style.display = 'block';
+      return;
+    }
+    err.style.display = 'none';
+    const msg = 'Assalam-o-Alaikum Maria! I want to hire you.\nName: ' + n + '\nService: ' + s + '\nProject details: ' + d + '\n(Sent from your website)';
+    window.open('https://wa.me/923342204513?text=' + encodeURIComponent(msg), '_blank');
+  });
+
+  /* hide play pulse while a work video is playing */
+  document.querySelectorAll('.work-card video,.sx-card video').forEach(v => {
+    const ind = v.parentElement.querySelector('.play-ind');
+    if (!ind) return;
+    v.addEventListener('play', () => ind.classList.add('off'));
+    v.addEventListener('pause', () => ind.classList.remove('off'));
+    v.addEventListener('ended', () => ind.classList.remove('off'));
+  });
+</script>
+</body>
+</html>
